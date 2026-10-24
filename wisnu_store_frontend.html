@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISNU STORE - Top Up Diamond & Jasa Custom Decal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0c10',
+                        darkcard: '#121620',
+                        accentCyan: '#00f2fe',
+                        accentBlue: '#4facfe',
+                        accentOrange: '#ff5e62',
+                        accentRed: '#ff9966'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0c10;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+        }
+        .glow-red {
+            box-shadow: 0 0 20px rgba(255, 94, 98, 0.3);
+        }
+        .glass-card {
+            background: rgba(18, 22, 32, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 242, 254, 0.4);
+            transform: translateY(-3px);
+            transition: all 0.3s ease;
+        }
+        .gradient-text-cyan {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-orange {
+            background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-slow {
+            animation: pulse 3s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.85; transform: scale(1.02); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-black font-black font-heading text-xl shadow-lg shadow-cyan-500/30">
+                    W
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-xl tracking-wider text-white">WISNU<span class="text-cyan-400">STORE</span></span>
+                    <span class="block text-[10px] text-gray-400 font-semibold tracking-widest uppercase -mt-1">Gaming Shop & Decal</span>
+                </div>
+            </a>
+
+            <!-- Quick Navigation & WA Link -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-300">
+                <a href="#diamond-section" class="hover:text-cyan-400 transition-colors"><i class="fa-solid me-1 fa-gem text-cyan-400"></i> Paket Diamond</a>
+                <a href="#decal-section" class="hover:text-orange-400 transition-colors"><i class="fa-solid me-1 fa-paintbrush text-orange-400"></i> Custom Decal</a>
+                <a href="#trust-section" class="hover:text-green-400 transition-colors"><i class="fa-solid me-1 fa-shield-halved text-green-400"></i> Keunggulan</a>
+            </nav>
+
+            <a href="https://wa.me/6281337422468" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-4 py-2 rounded-xl text-sm flex items-center space-x-2 shadow-lg shadow-green-500/20 transition-all hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">Hubungi WA</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative py-12 md:py-20 px-4 max-w-7xl mx-auto w-full text-center">
+        <!-- Glow Backdrop -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/3 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+            <span>PROSES CEPAT • LEWAT CODE REDEEM • TANPA MABAR</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black text-white tracking-tight leading-tight mb-4">
+            TOP UP DIAMOND & JASA CUSTOM <span class="gradient-text-cyan">DECAL GAMING</span>
+        </h1>
+        
+        <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base mb-8">
+            Pusat Top Up Diamond Murah, Aman, & Terpercaya untuk <span class="text-white font-semibold">Ontel Simulator Indonesia</span> & <span class="text-white font-semibold">Herex Simulator Indonesia Max</span>.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#diamond-section" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-cyan-500/30 hover:scale-105 transition-transform flex items-center space-x-2">
+                <i class="fa-solid fa-gem text-lg"></i>
+                <span>Beli Diamond</span>
+            </a>
+            <a href="#decal-section" class="glass-card hover:bg-gray-800 text-white font-bold px-6 py-3.5 rounded-xl border border-gray-700 hover:scale-105 transition-transform flex items-center space-x-2">
+                <i class="fa-solid fa-palette text-orange-400 text-lg"></i>
+                <span>Custom Decal</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 1: Diamond Packages -->
+    <section id="diamond-section" class="py-12 px-4 max-w-7xl mx-auto w-full">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 border-b border-gray-800 pb-4">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-gem text-cyan-400"></i> LIST WISNU STORE PAKET PREMIUM
+                </h2>
+                <p class="text-gray-400 text-sm mt-1">Sistem transaksi via Code Redeem, simpel & 100% aman!</p>
+            </div>
+            <div class="mt-4 md:mt-0 flex items-center space-x-2 text-xs font-semibold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-3 py-1.5 rounded-lg w-fit">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Prose Otomatis / Instant Order</span>
+            </div>
+        </div>
+
+        <!-- Category 1: Paket Ontel -->
+        <div class="mb-10">
+            <h3 class="text-lg font-heading font-bold text-cyan-300 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-bicycle"></i> PAKET ONTEL
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Card -->
+                <div class="glass-card p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-black font-black text-[10px] px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                        Hemats
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400 uppercase font-semibold mb-1">Paket Standar</div>
+                        <div class="text-xl font-extrabold text-white mb-2">1.500 DM 💎 + 25 DM 💎</div>
+                        <div class="text-2xl font-black text-cyan-400 font-heading mb-4">Rp 13.000</div>
+                    </div>
+                    <button onclick="orderWA('Paket Ontel - 1.500 DM + 25 DM', '13K')" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-black font-bold py-2.5 rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order Paket 13K</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 2: Paket Beli Premium -->
+        <div>
+            <h3 class="text-lg font-heading font-bold text-cyan-300 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-crown text-amber-400"></i> PAKET BELI PREMIUM
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <!-- Prem 1 -->
+                <div class="glass-card p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between border-amber-500/30">
+                    <div class="absolute top-0 right-0 bg-gradient-to-r from-amber-400 to-orange-500 text-black font-black text-[10px] px-3 py-1 rounded-bl-xl uppercase">
+                        PREM 1
+                    </div>
+                    <div>
+                        <div class="text-xs text-amber-400 uppercase font-semibold mb-1">Super Sultan</div>
+                        <div class="text-lg font-extrabold text-white mb-1">11.000 DM 💎 + 1M</div>
+                        <p class="text-xs text-gray-400 mb-3">Include Cash/Bonus 1M</p>
+                        <div class="text-2xl font-black text-amber-400 font-heading mb-4">Rp 56.000</div>
+                    </div>
+                    <button onclick="orderWA('PAKET PREM 1 (11.000 DM + 1M)', '56K')" class="w-full bg-gradient-to-r from-amber-400 to-orange-500 hover:opacity-90 text-black font-bold py-2.5 rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order 56K</span>
+                    </button>
+                </div>
+
+                <!-- Prem 2 -->
+                <div class="glass-card p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-cyan-500/20 text-cyan-300 font-black text-[10px] px-3 py-1 rounded-bl-xl uppercase border-b border-l border-cyan-500/30">
+                        PREM 2
+                    </div>
+                    <div>
+                        <div class="text-xs text-cyan-400 uppercase font-semibold mb-1">Best Value</div>
+                        <div class="text-lg font-extrabold text-white mb-1">9.000 DM 💎 + 2M</div>
+                        <p class="text-xs text-gray-400 mb-3">Include Cash/Bonus 2M</p>
+                        <div class="text-2xl font-black text-cyan-400 font-heading mb-4">Rp 45.000</div>
+                    </div>
+                    <button onclick="orderWA('PAKET PREM 2 (9.000 DM + 2M)', '45K')" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-black font-bold py-2.5 rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order 45K</span>
+                    </button>
+                </div>
+
+                <!-- Prem 3 -->
+                <div class="glass-card p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-cyan-500/20 text-cyan-300 font-black text-[10px] px-3 py-1 rounded-bl-xl uppercase border-b border-l border-cyan-500/30">
+                        PREM 3
+                    </div>
+                    <div>
+                        <div class="text-xs text-cyan-400 uppercase font-semibold mb-1">Populer</div>
+                        <div class="text-lg font-extrabold text-white mb-1">9.000 DM 💎 + 2M</div>
+                        <p class="text-xs text-gray-400 mb-3">Include Cash/Bonus 2M</p>
+                        <div class="text-2xl font-black text-cyan-400 font-heading mb-4">Rp 45.000</div>
+                    </div>
+                    <button onclick="orderWA('PAKET PREM 3 (9.000 DM + 2M)', '45K')" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-black font-bold py-2.5 rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order 45K</span>
+                    </button>
+                </div>
+
+                <!-- Prem 4 -->
+                <div class="glass-card p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-cyan-500/20 text-cyan-300 font-black text-[10px] px-3 py-1 rounded-bl-xl uppercase border-b border-l border-cyan-500/30">
+                        PREM 4
+                    </div>
+                    <div>
+                        <div class="text-xs text-cyan-400 uppercase font-semibold mb-1">Starter Prem</div>
+                        <div class="text-lg font-extrabold text-white mb-1">3.500 DM 💎 + 1M</div>
+                        <p class="text-xs text-gray-400 mb-3">Include Cash/Bonus 1M</p>
+                        <div class="text-2xl font-black text-cyan-400 font-heading mb-4">Rp 25.000</div>
+                    </div>
+                    <button onclick="orderWA('PAKET PREM 4 (3.500 DM + 1M)', '25K')" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-black font-bold py-2.5 rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order 25K</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Custom Decal Service -->
+    <section id="decal-section" class="py-12 px-4 max-w-7xl mx-auto w-full">
+        <div class="glass-card rounded-3xl p-6 md:p-10 border border-orange-500/30 relative overflow-hidden">
+            <!-- Backdrop Glow -->
+            <div class="absolute -top-24 -right-24 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-lg bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold mb-3">
+                        <i class="fa-solid fa-fire"></i> READY JASA CUSTOM DECAL
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-heading font-black text-white mb-4">
+                        DESAIN LIIVERY & DECAL <span class="gradient-text-orange">HD 100%</span>
+                    </h2>
+
+                    <p class="text-gray-300 text-sm sm:text-base mb-6">
+                        Buat tampilan motor/sepeda impianmu makin keren & berbeda dari yang lain di game simulator favoritmu!
+                    </p>
+
+                    <!-- Supported Games -->
+                    <div class="space-y-2 mb-6">
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Game Yang Didukung:</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2">
+                                <i class="fa-solid fa-gamepad text-orange-400"></i> Ontel Simulator Indonesia
+                            </span>
+                            <span class="bg-gray-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2">
+                                <i class="fa-solid fa-motorcycle text-orange-400"></i> Herex Simulator Indonesia Max
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Features Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                        <div class="bg-gray-900/60 p-3 rounded-xl border border-gray-800">
+                            <div class="text-orange-400 font-bold text-sm">🤩 Hasil HD 100%</div>
+                            <div class="text-gray-400 text-xs">Kualitas jernih & detail tajam</div>
+                        </div>
+                        <div class="bg-gray-900/60 p-3 rounded-xl border border-gray-800">
+                            <div class="text-cyan-400 font-bold text-sm">🥶 Free Req Konsep</div>
+                            <div class="text-gray-400 text-xs">Arai, Vietnam Style, Racing, dll</div>
+                        </div>
+                        <div class="bg-gray-900/60 p-3 rounded-xl border border-gray-800">
+                            <div class="text-orange-400 font-bold text-sm">🤩 Bisa Body Coak</div>
+                            <div class="text-gray-400 text-xs">Bisa request variasi custom</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div>
+                            <div class="text-xs text-gray-400">Harga Mulai:</div>
+                            <div class="text-2xl sm:text-3xl font-heading font-black text-orange-400">5K - 40K 🤩🔥</div>
+                        </div>
+                        <a href="https://wa.me/6281337422468?text=ASSALAMUALAIKUM_BG_MAU_BELI_DECAL" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-orange-500/20 hover:scale-105 transition-transform flex items-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Pesan Decal Sekarang</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Graphic/Visual Card -->
+                <div class="w-full lg:w-80 bg-gradient-to-b from-gray-900 to-gray-950 p-6 rounded-2xl border border-gray-800 text-center flex flex-col items-center justify-center">
+                    <div class="w-20 h-20 rounded-2xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400 text-4xl mb-4">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg">CUSTOM DESAIN</h3>
+                    <p class="text-xs text-gray-400 mt-1 mb-4">Kirimkan gambar referensi atau konsep desain ke WA Wisnu Store!</p>
+                    <a href="https://wa.me/6281337422468?text=ASSALAMUALAIKUM_BG_MAU_BELI_DECAL" target="_blank" class="text-xs text-orange-400 underline font-semibold">
+                        Konsultasi Gratis via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Guarantees & Trust -->
+    <section id="trust-section" class="py-12 px-4 max-w-7xl mx-auto w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl flex-shrink-0">
+                    <i class="fa-solid fa-shield-check"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-white text-base">#100% AMANAH</h3>
+                    <p class="text-gray-400 text-xs mt-1">Transaksi terjamin aman tanpa resiko banned. Kepercayaan pelanggan adalah prioritas utama!</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl flex-shrink-0">
+                    <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-white text-base">LEWAT CODE REDEEM</h3>
+                    <p class="text-gray-400 text-xs mt-1">Tidak perlu mabar atau login akun. Tinggal klaim kode redeem yang diberikan, instan masuk!</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400 text-2xl flex-shrink-0">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-white text-base">RESPON CEPAT</h3>
+                    <p class="text-gray-400 text-xs mt-1">Admin siap melayani orderan Anda dengan ramah & cepat via WhatsApp resmi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-gray-950 py-8 px-4 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <span class="font-heading font-black text-lg text-white">WISNU<span class="text-cyan-400">STORE</span></span>
+                <p class="text-xs text-gray-500 mt-1">Layanan Top Up Game Simulator & Decal Custom Terpercaya.</p>
+            </div>
+            
+            <div class="flex items-center space-x-4 text-xs text-gray-400 font-semibold">
+                <span class="text-cyan-400">#AMAN100%</span>
+                <span>•</span>
+                <span class="text-orange-400">#WISNUSTUR</span>
+                <span>•</span>
+                <span class="text-green-400">#100% AMANAH</span>
+            </div>
+
+            <div class="text-xs text-gray-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Wisnu Store. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281337422468" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-green-500/40 hover:scale-110 transition-transform pulse-slow flex items-center justify-center" title="Chat Admin WA">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript Order Function -->
+    <script>
+        function orderWA(packageName, price) {
+            const phone = "6281337422468";
+            const text = `Halo Admin WISNU STORE, saya mau beli ${packageName} seharga ${price}. Apakah stock masih ready?`;
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
+        }
+    </script>
+</body>
+</html>
